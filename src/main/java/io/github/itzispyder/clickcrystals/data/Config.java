@@ -21,7 +21,7 @@ import java.util.Map;
 
 public class Config implements JsonSerializable<Config>, Global {
 
-    public static final String PATH = "." + modId + "/";
+    public static final String PATH = ".settings/" + modId + "/";
     public static final String PATH_SCRIPTS = PATH + "scripts/";
     public static final String PATH_PROFILES = PATH + "profiles/";
     public static final String PATH_CONFIG_PROFILE = PATH + "profiles.json";
