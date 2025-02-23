@@ -46,7 +46,7 @@ public class ScriptFileArgumentType implements Global, ArgumentType<String> {
     public List<String> getPaths() {
         List<String> paths = new ArrayList<>();
         for (File file : ClickScript.collectFiles()) {
-            paths.add(file.getPath().replaceFirst("^.clickcrystals(/|\\\\)scripts(/|\\\\)", ""));
+            paths.add(file.getPath().replaceFirst("^.settings(/|\\\\)clickcrystals(/|\\\\)scripts(/|\\\\)", ""));
         }
         return paths;
     }
